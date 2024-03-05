@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Alata');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+h1, h2, h3, h4, p, li {
+    color: #FAF0E6;
+    font-family: "Alata";
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    margin: 0;
+    vertical-align: initial;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+.listname {
+    font-size: 1.0rem;
+    margin-top: 2vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    /* border-style: solid; */
+    padding: 10px;
+    width: 100vw - 10px;
+    height: 98svh;
+    overflow: hidden;
+    background-color: #352F44;
+}
+
+.mainblock {
+    box-sizing: border-box;
+    width: 100%;
+    height: 74%;
+    /* border-style: solid; */
+    overflow-y: auto;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    min-height: 70vh;
+    /* border-style: solid; */
+    padding: 3rem;
+}
+
+.padding {
+    min-height: 10svh;
+    margin: 5svh;
+}
+
+
+.scroller {
+}
+.scroller__inner {
+    padding-block: 1rem; /* for shadows */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 10% 90%, transparent);
+    mask: linear-gradient(90deg, transparent, white 10% 90%, transparent); 
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 100s linear infinite;
+}
+
+
+.image {
+    height: 23vmin;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* curve image borders and give them shadow*/
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.hidden[data-effect="slide"] {
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hidden[data-effect="type"] {
+    opacity: 0;
+    filter:blur(5px);
+    transition: all 2s;
+}
+
+.show[data-effect="slide"] {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show[data-effect="type"] {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@keyframes typing {
+    from {width: 0} to {width: 100%}
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.welcomep {
+    display: flexbox;
+    flex-wrap: wrap;
+    padding-bottom: 13svh;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    line-height: normal;
+}
+
+.descs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80vw;
+}
+
+.desc:nth-child(1) {
+    transition-delay: 1000ms;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: auto;
+    width: 32vmin;
+    grid-row: 1 / span 10;
+    grid-column: 1;
+
+    justify-self: right;
+}
+
+.desc:nth-child(2) {
+    transition-delay: 1400ms; 
+    grid-row: 3;
+    grid-column: 2;
+
+    justify-self: left;
+    margin-left: 1rem;
+}
+
+.desc:nth-child(3) {
+    transition-delay: 2100ms;
+    grid-row: 4;
+    grid-column: 2;
+
+    justify-self: left;
+    margin-left: 1.5rem;
+}
+
+.desc:nth-child(4) {
+    transition-delay: 2900ms;
+    grid-row: 5;
+    grid-column: 2;
+
+    justify-self: left;
+    margin-left: 1rem;
+}
+
+.aboutp {
+    display: grid;
+    grid-template-rows: 20% auto;
+}
+
+.abouttitle {
+    height: 15svh;
+    width: 100%;
+
+    text-align: right;
+    line-height: normal;
+}
+
+.about {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.about:nth-child(1) {
+    transition-delay: 1000ms;
+}
+
+.about:nth-child(2) {
+    transition-delay: 2000ms;
+}
+
+.about:nth-child(3) {
+    transition-delay: 3000ms;
+}
+
+.about:nth-child(4) {
+    transition-delay: 4000ms;
+}
+
+.schoolexp {
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+}
+
+.schoolexp:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+.schoolexp:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+
+}
+
+.schoolexp:nth-child(3) {
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+.schoolexp:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1;
+
+}
+
+.courses {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
