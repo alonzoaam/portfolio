@@ -1,93 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
-  <link rel="stylesheet" href="style.css">
-  <title>Page Title</title>
-  <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alonzo Murrieta - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
-  <div class="mainblock">
-    <section class="welcomep hidden" data-effect="slide">
-        <h1 class="hidden" data-effect="slide">Welcome!</h1>
-        <div class="descs">
-            <img class ="desc hidden" data-effect="slide" src="images/me.jpeg" draggable="false"/>
-            <p class="desc hidden" data-effect="slide">Hi, I'm Alonzo</p>
-            <p class="desc hidden" data-effect="slide">This is my website.</p>
-            <p class="desc hidden" data-effect="slide">Hope like it!</p>
-        </div>
-    </section>
-    <section class="aboutp">
-        <h2 class="abouttitle hidden" data-effect="slide">About</h2>
-        <div class="abouts">
-            <p class="about hidden" data-effect="slide">I'm a independent website designer living in Los Angeles.</p>
-            <p class="about hidden" data-effect="slide">In 2023 I graduated with a degree in Computer Science,</p>
-            <p class="about hidden" data-effect="slide">here's those details; </p>
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
 
-            <div class="about schoolexp hidden" data-effect="type">
-                <p class="listname hidden" data-effect="type">Completed Projects:</p>
-                <ul class="hidden" data-effect="type">
-                    <li>Programming Language Interpreter</li>
-                    <li>Fluid Particle Image Conversion</li>
-                    <li>3D Rendered Physics Sandbox</li>
-                    <li>Campus Events Commission Front-End website</li>
-                    <li>CSV-RDF Graph Conversion & Update Tool</li>
-                    <li>Common Sense NLP Model</li>
-                </ul>
-                <p class="listname hidden" data-effect="type">Relevant Courses:<br>
-                <ul class="courses hidden" data-effect="type">
-                    <li>Software Engineering</li>
-                    <li>Computer Network Fundamentals</li>
-                    <li>Natural Language Processing</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Programming Languages</li>
-                    <li>Computer Animation</li>
-                    <li>Artificial life for Computer Graphics and Vision</li>
-                    <li>Computer Systems Architercture</li>
-                    <li>Data Science</li>
-                    <li>Digital Design</li>
-                    <li>Computer Graphics</li>
-                    <li>Algorithms</li>
-                    <li>Operating Systems</li>
-                    <li>Logic Design of Digital Systems</li>
-                    <li>User Experience and Design</li>
-                </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h1 class="glitch" data-text="Alonzo Murrieta">Alonzo Murrieta</h1>
+            <p class="subtitle">Computer Science Graduate | Web Developer | AI Enthusiast</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science graduate from UCLA with a passion for web development, AI, and low-level programming. My experience spans from data annotation to software development internships at Intel.</p>
+                    <h3>Education</h3>
+                    <p><strong>University of California, Los Angeles</strong> - B.S. in Computer Science, GPA: 3.30 (June 2023)</p>
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>React</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>HTML/CSS</li>
+                        <li>GLSL</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="projectsp hidden" data-effect="slide">
-        <h2 class="hidden" data-effect="slide">Projects</h2>
-        <div class="projects">
-            <p class="project hidden" data-effect="slide">Sorry! I wanted to deploy this first version before I continued.</p>
-            <p class="project hidden" data-effect="slide">Check back in a week or so for more updates.</p>
-            <p class="project hidden" data-effect="slide"><a href="https://www.linkedin.com/in/alonzo-murrieta/">Connect with me!</a></p>
-            <p class="project hidden" data-effect="slide"><a href="https://alonzoaam.github.io/soloFps/">(Personal) Single Player FPS w/ ThreeJs (WIP)</a></p>
-            <p class="project hidden" data-effect="slide"><a href="https://alonzoaam.github.io/flappybird/">(Academic) 3D Flappy Bird w/ JS</a></p>
-        </div>
-    </section>
-  </div>
-  <div class="scroller">
-    <div class="scroller__inner">
-        <img class="image" src="./images/koufax.JPG" draggable="false" />
-        <img class="image" src="./images/beach.JPG" draggable="false" />
-        <img class="image" src="./images/buildingflag.JPG" draggable="false" />
-        <img class="image" src="./images/cacti.JPG" draggable="false" />
-        <img class="image" src="./images/dorm.JPG" draggable="false" />
-        <img class="image" src="./images/kona.JPG" draggable="false" />
-        <img class="image" src="./images/aquarium.JPG" draggable="false" />
-        <img class="image" src="./images/macus.JPG" draggable="false" />
-        <img class="image" src="./images/ocean.JPG" draggable="false" />
-        <img class="image" src="./images/potplants.JPG" draggable="false" />
-        <img class="image" src="./images/puzzle.JPG" draggable="false" />
-        <img class="image" src="./images/rocky.JPG" draggable="false" />
-        <img class="image" src="./images/rollerskates.JPG" draggable="false" />
-        <img class="image" src="./images/tree.JPG" draggable="false" />
-        <img class="image" src="./images/vertcacti.JPG" draggable="false" />
-    </div>
-  </div>
-  <script>
-    
-  </script>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>UCLA Campus Events Commission Website</h3>
+                    <p>Dynamic website using HTML/CSS, JavaScript, React.js, and Node.js</p>
+                </div>
+                <div class="project-card">
+                    <h3>Bidirectional Excel to Fuseki Graph Converter</h3>
+                    <p>Web application using JavaScript, React.js, and Node.js</p>
+                </div>
+                <div class="project-card">
+                    <h3>Egg-timer</h3>
+                    <p>Comprehensive web application using the MERN stack</p>
+                </div>
+                <div class="project-card">
+                    <h3>3D Facial Conversion AI</h3>
+                    <p>Chatbot using GPT3, VOCA, and Python3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:alonzom1515@gmail.com">alonzom1515@gmail.com</a></p>
+                <p>Phone: +1 562 537 1811</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/alonzo-murrieta/" target="_blank">linkedin.com/in/alonzo-murrieta</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Alonzo Murrieta. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
